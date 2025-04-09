@@ -4,8 +4,6 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 import PropTypes from "prop-types";
 import defaultImg from "../assets/deafaultImg.jpeg";
 
-
-
 function Player({ name, team, nationality, jerseyNumber, age, imageURL }) {
 	return (
 		<>
@@ -51,6 +49,8 @@ function Player({ name, team, nationality, jerseyNumber, age, imageURL }) {
 	);
 }
 
+// props types
+
 Player.propTypes = {
 	name: PropTypes.string,
 	team: PropTypes.string,
@@ -59,6 +59,8 @@ Player.propTypes = {
 	age: PropTypes.number,
 	imageUrl: PropTypes.string,
 };
+
+// default props.
 
 Player.defaultProps = {
 	name: "Unknown Player",
